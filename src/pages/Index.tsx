@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import ProjectCard from "@/components/ProjectCard";
+import WaveDivider from "@/components/WaveDivider";
 import { getFeaturedProjects } from "@/data/projects";
 
 const Index = () => {
@@ -18,6 +19,13 @@ const Index = () => {
           }}
         >
           <div className="absolute inset-0 bg-background/70" />
+        </div>
+        
+        {/* Floating decorative elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-1/4 left-10 w-32 h-32 border border-primary/20 rounded-full animate-float" style={{ animationDelay: '0s' }} />
+          <div className="absolute top-1/3 right-20 w-20 h-20 border border-primary/10 rounded-full animate-float" style={{ animationDelay: '2s' }} />
+          <div className="absolute bottom-1/4 left-1/4 w-16 h-16 border border-primary/15 rounded-full animate-float" style={{ animationDelay: '4s' }} />
         </div>
         
         <div className="relative z-10 container mx-auto px-6 text-center">
@@ -39,10 +47,12 @@ const Index = () => {
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-0 animate-fade-in stagger-4">
           <div className="w-px h-16 bg-gradient-to-b from-primary to-transparent" />
         </div>
+        
+        <WaveDivider />
       </section>
 
       {/* Introduction */}
-      <section className="py-24 md:py-32 bg-card">
+      <section className="relative py-24 md:py-32 bg-card">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-heading font-light text-foreground mb-8">
@@ -61,10 +71,12 @@ const Index = () => {
             </Link>
           </div>
         </div>
+        <WaveDivider />
       </section>
 
       {/* Featured Projects */}
-      <section className="py-24 md:py-32">
+      <section className="relative py-24 md:py-32">
+        <WaveDivider variant="top" />
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <p className="text-primary text-xs uppercase tracking-[0.3em] mb-4">
@@ -90,10 +102,12 @@ const Index = () => {
             </Link>
           </div>
         </div>
+        <WaveDivider />
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 md:py-32 bg-card">
+      <section className="relative py-24 md:py-32 bg-card">
+        <WaveDivider variant="top" />
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-light text-foreground mb-6">
             Let's Build Something Extraordinary
