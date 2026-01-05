@@ -38,10 +38,10 @@ const Contact = () => {
                       Email
                     </p>
                     <a 
-                      href="mailto:hello@felixkimeli.com"
+                      href="mailto:kkfelix1@gmail.com"
                       className="text-foreground hover:text-primary transition-colors"
                     >
-                      hello@felixkimeli.com
+                      kkfelix1@gmail.com
                     </a>
                   </div>
                 </div>
