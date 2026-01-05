@@ -68,7 +68,7 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a 
-                href="mailto:hello@felixkimeli.com"
+                href="mailto:kkfelix1@gmail.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Email"
               >
@@ -76,7 +76,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="mt-4 text-muted-foreground text-sm">
-              hello@felixkimeli.com
+              kkfelix1@gmail.com
             </p>
           </div>
         </div>
