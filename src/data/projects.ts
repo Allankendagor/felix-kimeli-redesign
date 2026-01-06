@@ -7,6 +7,12 @@ export interface Project {
   thumbnail: string;
   images: string[];
   featured?: boolean;
+  // Property details
+  beds?: number;
+  baths?: number;
+  sqm?: number;
+  price?: number;
+  projectId?: string;
 }
 
 export const categories = [
@@ -31,7 +37,12 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80",
       "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&q=80"
     ],
-    featured: true
+    featured: true,
+    beds: 5,
+    baths: 4,
+    sqm: 450,
+    price: 589,
+    projectId: "FK-101"
   },
   {
     id: "urban-office-tower",
@@ -45,7 +56,10 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1554435493-93422e8220c8?w=1200&q=80",
       "https://images.unsplash.com/photo-1577985043696-8bd54d9c4f8d?w=1200&q=80"
     ],
-    featured: true
+    featured: true,
+    sqm: 12500,
+    price: 2499,
+    projectId: "FK-102"
   },
   {
     id: "minimalist-apartment",
@@ -58,7 +72,12 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80",
       "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
       "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80"
-    ]
+    ],
+    beds: 2,
+    baths: 2,
+    sqm: 120,
+    price: 249,
+    projectId: "FK-103"
   },
   {
     id: "coastal-retreat",
@@ -71,7 +90,12 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200&q=80",
       "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1200&q=80"
-    ]
+    ],
+    beds: 4,
+    baths: 3,
+    sqm: 380,
+    price: 459,
+    projectId: "FK-104"
   },
   {
     id: "cultural-center",
@@ -84,7 +108,10 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=1200&q=80",
       "https://images.unsplash.com/photo-1519999482648-25049ddd37b1?w=1200&q=80",
       "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80"
-    ]
+    ],
+    sqm: 8500,
+    price: 1899,
+    projectId: "FK-105"
   },
   {
     id: "garden-pavilion",
@@ -97,7 +124,12 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
       "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=1200&q=80",
       "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=1200&q=80"
-    ]
+    ],
+    beds: 3,
+    baths: 2,
+    sqm: 280,
+    price: 349,
+    projectId: "FK-106"
   },
   {
     id: "floating-concept",
@@ -110,7 +142,12 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=1200&q=80",
       "https://images.unsplash.com/photo-1448630360428-65456885c650?w=1200&q=80",
       "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1200&q=80"
-    ]
+    ],
+    beds: 6,
+    baths: 5,
+    sqm: 520,
+    price: 699,
+    projectId: "FK-107"
   },
   {
     id: "luxury-penthouse",
@@ -124,7 +161,12 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1200&q=80",
       "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=1200&q=80"
     ],
-    featured: true
+    featured: true,
+    beds: 4,
+    baths: 4,
+    sqm: 350,
+    price: 549,
+    projectId: "FK-108"
   }
 ];
 
