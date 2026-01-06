@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowLeft, ChevronLeft, ChevronRight, Bed, Bath, Square } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import Lightbox from "@/components/Lightbox";
 import { getProjectById, projects } from "@/data/projects";
@@ -75,6 +75,43 @@ const Project = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-light text-foreground">
               {project.title}
             </h1>
+          </div>
+        </div>
+      </section>
+
+      {/* Project Specs */}
+      <section className="py-8 md:py-12 border-b border-border">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-wrap items-center justify-between gap-6">
+            {/* Property Details */}
+            <div className="flex flex-wrap items-center gap-6 md:gap-8">
+              <div className="flex items-center gap-2 text-muted-foreground">
+                <Bed size={20} className="text-primary" />
+                <span className="text-foreground font-medium">{project.beds}</span>
+                <span>Beds</span>
+              </div>
+              <div className="flex items-center gap-2 text-muted-foreground">
+                <Bath size={20} className="text-primary" />
+                <span className="text-foreground font-medium">{project.baths}</span>
+                <span>Baths</span>
+              </div>
+              <div className="flex items-center gap-2 text-muted-foreground">
+                <Square size={20} className="text-primary" />
+                <span className="text-foreground font-medium">{project.sqm}</span>
+                <span>sq m</span>
+              </div>
+              <div className="text-primary font-mono text-sm">
+                {project.projectId}
+              </div>
+            </div>
+            
+            {/* Price */}
+            <div className="text-right">
+              <p className="text-3xl md:text-4xl font-heading text-primary font-medium">
+                ${project.price}
+              </p>
+              <p className="text-sm text-muted-foreground">Architectural drawings</p>
+            </div>
           </div>
         </div>
       </section>
