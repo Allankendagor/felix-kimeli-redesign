@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import Layout from "@/components/layout/Layout";
+import WaveDivider from "@/components/WaveDivider";
 
 const About = () => {
   return (
@@ -66,7 +67,8 @@ const About = () => {
       </section>
 
       {/* Services */}
-      <section className="py-24 bg-card">
+      <section className="py-24 bg-card relative">
+        <WaveDivider variant="top" />
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <p className="text-primary text-xs uppercase tracking-[0.3em] mb-4">
@@ -118,6 +120,7 @@ const About = () => {
             ))}
           </div>
         </div>
+        <WaveDivider variant="bottom" />
       </section>
 
       {/* Experience */}
@@ -144,7 +147,8 @@ const About = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-card">
+      <section className="py-24 bg-card relative">
+        <WaveDivider variant="top" />
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-light text-foreground mb-6">
             Ready to Start Your Project?
