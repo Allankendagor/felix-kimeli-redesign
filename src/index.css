@@ -108,15 +108,35 @@
   }
 
   .animate-wave {
-    animation: wave 8s ease-in-out infinite;
+    animation: wave 6s ease-in-out infinite;
   }
 
   .animate-wave-slow {
-    animation: wave 12s ease-in-out infinite;
+    animation: waveSlow 14s ease-in-out infinite;
   }
 
   .animate-wave-reverse {
     animation: waveReverse 10s ease-in-out infinite;
+  }
+
+  .animate-wave-float {
+    animation: waveFloat 16s ease-in-out infinite;
+  }
+
+  .animate-wave-drift {
+    animation: waveDrift 18s ease-in-out infinite;
+  }
+
+  .animate-wave-shimmer {
+    animation: waveShimmer 8s ease-in-out infinite;
+  }
+
+  .animate-wave-glow {
+    animation: waveGlow 6s ease-in-out infinite;
+  }
+
+  .animate-wave-sparkle {
+    animation: waveSparkle 4s ease-in-out infinite;
   }
 
   .animate-float {
@@ -163,31 +183,107 @@
 
 @keyframes wave {
   0%, 100% {
-    transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0) scaleY(1);
   }
   25% {
-    transform: translateX(-20px) translateY(10px);
+    transform: translateX(-25px) translateY(8px) scaleY(1.05);
   }
   50% {
-    transform: translateX(0) translateY(-10px);
+    transform: translateX(0) translateY(-12px) scaleY(0.95);
   }
   75% {
-    transform: translateX(20px) translateY(5px);
+    transform: translateX(25px) translateY(4px) scaleY(1.02);
+  }
+}
+
+@keyframes waveSlow {
+  0%, 100% {
+    transform: translateX(0) translateY(0) scaleY(1);
+  }
+  33% {
+    transform: translateX(-30px) translateY(6px) scaleY(1.03);
+  }
+  66% {
+    transform: translateX(20px) translateY(-8px) scaleY(0.97);
   }
 }
 
 @keyframes waveReverse {
   0%, 100% {
-    transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0) scaleY(1);
   }
   25% {
-    transform: translateX(15px) translateY(-8px);
+    transform: translateX(20px) translateY(-10px) scaleY(1.04);
   }
   50% {
-    transform: translateX(0) translateY(12px);
+    transform: translateX(0) translateY(15px) scaleY(0.96);
   }
   75% {
-    transform: translateX(-15px) translateY(-5px);
+    transform: translateX(-20px) translateY(-6px) scaleY(1.02);
+  }
+}
+
+@keyframes waveFloat {
+  0%, 100% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+    opacity: 0.8;
+  }
+  25% {
+    transform: translateX(-15px) translateY(-5px) rotate(0.5deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(10px) translateY(8px) rotate(-0.3deg);
+    opacity: 0.9;
+  }
+  75% {
+    transform: translateX(20px) translateY(-3px) rotate(0.2deg);
+    opacity: 1;
+  }
+}
+
+@keyframes waveDrift {
+  0%, 100% {
+    transform: translateX(0) translateY(0) skewX(0deg);
+  }
+  30% {
+    transform: translateX(25px) translateY(-6px) skewX(0.5deg);
+  }
+  60% {
+    transform: translateX(-20px) translateY(10px) skewX(-0.3deg);
+  }
+}
+
+@keyframes waveShimmer {
+  0%, 100% {
+    transform: translateX(0) scaleX(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateX(-30px) scaleX(1.02);
+    opacity: 1;
+  }
+}
+
+@keyframes waveGlow {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+    filter: blur(15px);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateX(-20px) translateY(5px);
+    filter: blur(20px);
+    opacity: 0.7;
+  }
+}
+
+@keyframes waveSparkle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
   }
 }
 
