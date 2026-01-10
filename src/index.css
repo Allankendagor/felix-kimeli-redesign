@@ -107,6 +107,7 @@
     animation: scaleIn 0.5s ease-out forwards;
   }
 
+  /* Desktop wave animations */
   .animate-wave {
     animation: wave 6s ease-in-out infinite;
   }
@@ -137,6 +138,39 @@
 
   .animate-wave-sparkle {
     animation: waveSparkle 4s ease-in-out infinite;
+  }
+
+  /* Mobile-optimized wave animations (faster, more visible) */
+  .animate-wave-fast {
+    animation: wave 4s ease-in-out infinite;
+  }
+
+  .animate-wave-slow-fast {
+    animation: waveSlow 9s ease-in-out infinite;
+  }
+
+  .animate-wave-reverse-fast {
+    animation: waveReverse 6s ease-in-out infinite;
+  }
+
+  .animate-wave-float-fast {
+    animation: waveFloat 10s ease-in-out infinite;
+  }
+
+  .animate-wave-drift-fast {
+    animation: waveDrift 12s ease-in-out infinite;
+  }
+
+  .animate-wave-shimmer-fast {
+    animation: waveShimmer 5s ease-in-out infinite;
+  }
+
+  .animate-wave-glow-fast {
+    animation: waveGlow 4s ease-in-out infinite;
+  }
+
+  .animate-sparkle-mobile {
+    animation: sparkleMobile 2s ease-in-out infinite;
   }
 
   .animate-float {
@@ -284,6 +318,17 @@
   }
   50% {
     transform: translateY(-5px);
+  }
+}
+
+@keyframes sparkleMobile {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.5);
   }
 }
 
