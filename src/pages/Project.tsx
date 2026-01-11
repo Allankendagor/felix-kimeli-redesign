@@ -86,28 +86,28 @@ const Project = () => {
             {/* Property Details */}
             <div className="flex flex-wrap items-center gap-6 md:gap-8">
               <div className="flex items-center gap-2 text-muted-foreground">
-                <Bed size={20} className="text-glow-metallic" />
-                <span className="text-glow-metallic font-medium">{project.beds}</span>
-                <span className="text-glow-metallic">Beds</span>
+                <Bed size={20} className="text-primary" />
+                <span className="text-foreground font-medium">{project.beds}</span>
+                <span>Beds</span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
-                <Bath size={20} className="text-glow-metallic" />
-                <span className="text-glow-metallic font-medium">{project.baths}</span>
-                <span className="text-glow-metallic">Baths</span>
+                <Bath size={20} className="text-primary" />
+                <span className="text-foreground font-medium">{project.baths}</span>
+                <span>Baths</span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
-                <Square size={20} className="text-glow-metallic" />
-                <span className="text-glow-metallic font-medium">{project.sqm}</span>
-                <span className="text-glow-metallic">sq m</span>
+                <Square size={20} className="text-primary" />
+                <span className="text-foreground font-medium">{project.sqm}</span>
+                <span>sq m</span>
               </div>
-              <div className="text-glow-metallic font-mono text-sm font-medium">
+              <div className="text-primary font-mono text-sm">
                 {project.projectId}
               </div>
             </div>
             
             {/* Price */}
             <div className="text-right">
-              <p className="text-3xl md:text-4xl font-heading text-glow-metallic-strong font-medium">
+              <p className="text-3xl md:text-4xl font-heading text-primary font-medium">
                 ${project.price}
               </p>
               <p className="text-sm text-muted-foreground">Architectural drawings</p>
