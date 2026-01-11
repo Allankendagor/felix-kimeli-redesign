@@ -36,7 +36,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <Link 
             to="/" 
-            className="text-2xl md:text-3xl font-heading font-semibold tracking-wide text-foreground hover:text-primary transition-colors"
+            className="text-2xl md:text-3xl font-heading font-semibold tracking-wide text-glow-metallic"
           >
             Felix Kimeli
           </Link>
